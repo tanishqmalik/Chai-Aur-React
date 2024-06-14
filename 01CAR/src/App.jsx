@@ -1,9 +1,11 @@
 
 function App() {
 
+    const username=" chai aur code"
+
     return (
         <>
-            <h1>hello</h1>
+            <h1>hello {username}</h1>
         </>
     )
 }
