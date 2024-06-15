@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+      { "source": "/01CAR/:path*", "destination": "/01CAR/dist/:path*" },
+      { "source": "/02counter/:path*", "destination": "/02counter/dist/:path*" }
+    ]
+}
+  
