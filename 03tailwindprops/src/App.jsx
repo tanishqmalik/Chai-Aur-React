@@ -2,13 +2,14 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-import Card from "./components/Card"
+import Card from "./components/Hero"
 
 
 function App() {
 
   return (
     <>
+    <Card />
     <Card />
     </>
   )
