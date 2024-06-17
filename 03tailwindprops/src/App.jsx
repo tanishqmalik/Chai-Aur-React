@@ -3,14 +3,14 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import Card from "./components/Hero"
+import Hero from "./components/Hero"
 
 
 function App() {
 
   return (
     <>
-    <Card />
-    <Card />
+    <Hero />
     </>
   )
 }
