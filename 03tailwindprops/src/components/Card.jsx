@@ -1,7 +1,7 @@
 import React from 'react'
 import { me } from '../assets/index'
 
-function Card({username}) {
+function Card({username, date}) {
     // console.log("props", props)
     return (
         <div id="card" className='mt-[300px] flex relative'>
@@ -10,7 +10,7 @@ function Card({username}) {
                 <h1 className='font-bold text-[30px] w-auto pb-12 relative'>{username}</h1>
                 <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, impedit ipsum, eos eligendi quia sed quis quaerat
                     reprehenderit saepe, dicta aspernatur hic repudiandae expedita ratione nulla debitis corrupti rerum reiciendis.</p>
-                <p className='relative bottom-4 pt-8'>17 June, 2024</p>
+                <p className='relative bottom-4 pt-8'>{date}</p>
             </div>
         </div>
     )

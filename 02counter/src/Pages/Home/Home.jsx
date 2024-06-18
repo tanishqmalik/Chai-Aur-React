@@ -7,11 +7,12 @@ const Home = () => {
     let [Counter, setCounter] = useState(0)
 
 
-    // let Counter= 0;
-
     const addvalue = () => {
-        Counter = Counter + 1;
-        setCounter(Counter)
+        // Counter = Counter + 1;
+
+        setCounter(Counter=>Counter+2)
+        setCounter(Counter=>Counter+1)
+
     }
     const removevalue = () => {
         Counter = Counter - 1;
