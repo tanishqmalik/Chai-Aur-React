@@ -53,19 +53,30 @@ function Home() {
                         max={100}
                         value={length}
                         className='cursor-pointer'
-                        onChange={(e)=>{setLength(e.target.value)}}
+                        onChange={(e) => { setLength(e.target.value) }}
                     >
                     </input>
                     <label className='text-white'>Length:{length}</label>
                     <input
-                    type="checkbox"
-                    defaultChecked={charYes}
-                    id="charInput"
-                    onChange={()=>{
-                        setcharAllowed((prev)=>!prev);
-                    }}
+                        type="checkbox"
+                        defaultChecked={charYes}
+                        id="numinput"
+                        onChange={() => {
+                            setnumYes((prev) => !prev);
+                        }}
                     >
                     </input>
+                    <label className='text-white'>Numbers</label>
+                    <input
+                        type="checkbox"
+                        defaultChecked={charYes}
+                        id="charinput"
+                        onChange={() => {
+                            setcharYes((prev) => !prev);
+                        }}
+                    >
+                    </input>
+                    <label className='text-white'>Characters</label>
                 </div>
             </div>
         </div>
