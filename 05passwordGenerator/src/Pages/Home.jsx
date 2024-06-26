@@ -1,14 +1,16 @@
 import React from 'react'
-import { useState, useCallback } from 'react'
+import { useState, useCallback,useEffect,useRef  } from 'react'
 
 function Home() {
 
 
 
-    const [length, setLength] = useState(0)
+    const [length, setLength] = useState(6)
     const [numYes, setnumYes] = useState(false);
     const [charYes, setcharYes] = useState(false);
     const [pass, setpass] = useState("");
+
+    const passwordRef = useRef(null)
 
     const passwordGenerator = useCallback(() => {
         let pass = ""
@@ -21,15 +23,26 @@ function Home() {
             str += "!@#$%^&*()"
         }
 
-        for (let i = 1; i <= array.length; i++) {
-            let char = Math.floor(Math.random() * str.length)
+        for (let i = 1; i <= length; i++) {
+            let hello = Math.floor(Math.random() * str.length+1)
 
-            pass = str.charAt(char);
+            pass += str.charAt(hello)
         }
 
         setpass(pass)
 
     }, [length, numYes, charYes, setpass])
+
+    const copyPassToClip = useCallback(()=>{
+        passwordRef.current?.select();
+        window.navigator.clipboard.writeText(pass)
+    },[pass] )
+
+    useEffect(()=>{
+        passwordGenerator()
+    }, [length,numYes, charYes, passwordGenerator])
+
+
     return (
         <div className='w-full h-screen  text-center justify-center items-center flex flex-col'>
             <div>
@@ -42,15 +55,17 @@ function Home() {
                         type="text"
                         value={pass}
                         placeholder='password'
+                        readOnly
+                        ref={passwordRef}
                         className='outline-none border border-red-600 rounded-lg text-2xl px-3'>
                     </input>
-                    <button className='bg-white px-2 py-2 rounded-lg '>copy</button>
+                    <button onClick={copyPassToClip()} className='bg-white px-2 py-2 rounded-lg '>copy</button>
                 </div>
                 <div className='flex flex-wrap gap-2'>
                     <input
                         type="range"
                         min={6}
-                        max={100}
+                        max={15}
                         value={length}
                         className='cursor-pointer'
                         onChange={(e) => { setLength(e.target.value) }}
@@ -59,7 +74,7 @@ function Home() {
                     <label className='text-white'>Length:{length}</label>
                     <input
                         type="checkbox"
-                        defaultChecked={charYes}
+                        defaultChecked={numYes}
                         id="numinput"
                         onChange={() => {
                             setnumYes((prev) => !prev);
@@ -79,6 +94,8 @@ function Home() {
                     <label className='text-white'>Characters</label>
                 </div>
             </div>
+
+            {/* <button onClick={passwordGenerator()} className='bg-black text-white px-2 py-2 rounded-full my-2'>click me baby</button> */}
         </div>
     )
 }
