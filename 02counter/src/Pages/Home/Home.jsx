@@ -10,12 +10,16 @@ const Home = () => {
     const addvalue = () => {
         // Counter = Counter + 1;
 
-        setCounter(Counter=>Counter+2)
+        // setCounter(Counter=>Counter+2)
         setCounter(Counter=>Counter+1)
 
     }
     const removevalue = () => {
-        Counter = Counter - 1;
+        // Counter = Counter - 1;
+        setCounter(Counter=>Counter-1)
+    }
+    const reset = () =>{
+        Counter=0
         setCounter(Counter)
     }
     return (
@@ -27,6 +31,7 @@ const Home = () => {
             <div className='hello2'>
                 <button onClick={addvalue}>Add value </button>
                 <button onClick={removevalue}>Remove value</button>
+                <button onClick={reset}>reset</button>
             </div>
 
             <p>footer: {Counter}</p>
