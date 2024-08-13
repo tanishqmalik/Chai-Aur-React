@@ -8,6 +8,10 @@ import ColorList from './components/ColorList'
 import SlotMachineExer from './components/SlotMachineExer'
 import ShoppingList from './components/ShoppingList'
 import PropertyList from './components/PropertyList'
+import SlotMachineExer2 from './components/SlotMachineExer2'
+import ShoppingList2 from './components/ShoppingList2'
+// import Toggler from './components/Toggler'
+import ColorBox from './components/ColorBox'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -50,6 +54,25 @@ function App() {
     { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
   ];
 
+  const colors = [
+    "#E53935",
+    "#E91E63",
+    "#9C27B0",
+    "#673AB7",
+    "#3F51B5",
+    "#2196F3",
+    "#03A9F4",
+    "#00BCD4",
+    "#009688",
+    "#4CAF50",
+    "#8BC34A",
+    "#CDDC39",
+    "#FFEB3B",
+    "#FFC107",
+    "#FF9800",
+    "#FF5722",
+  ];
+
 
   return (
     <>
@@ -72,6 +95,16 @@ function App() {
 
     {/* <ShoppingList items={data}/> */}
     {/* <PropertyList properties={properties}/> */}
+    {/* <SlotMachineExer2 val1="g" val2 ="g" val3="g" />
+    <SlotMachineExer2 val1="g" val2 ="g" val3="e" /> */}
+
+    {/* <ShoppingList2 items={data}/> */}
+
+    {/* <Toggler/> */}
+
+    <ColorBox colors={colors}/>
+
+
     </>
   )
 }

@@ -15,6 +15,9 @@ const PropertyList = ({ properties }) => {
     }
 
 
+    
+
+
 
     return (
         //prop drilling

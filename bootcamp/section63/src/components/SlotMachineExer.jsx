@@ -6,8 +6,7 @@ const SlotMachineExer = ({val1,val2,val3 }) => {
     //     val1!==val2!==val3
     // }
     const styles= {color:isWinner ? "green": "red"}
-    const list = [<h1 style={styles}>you win </h1>, <h2>congrats</h2>]
-
+    const list = [<h1 style={{styles}}>you win </h1>, <h2>congrats</h2>]
 
     // const hello = ()=> {
     //     va11===val2
