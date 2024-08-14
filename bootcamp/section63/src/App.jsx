@@ -12,6 +12,9 @@ import SlotMachineExer2 from './components/SlotMachineExer2'
 import ShoppingList2 from './components/ShoppingList2'
 // import Toggler from './components/Toggler'
 import ColorBox from './components/ColorBox'
+import Counter from './components2/Counter'
+import ScoreKeeper from './components2/ScoreKeeper'
+import EmojiClicker from './components2/EmojiClicker'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -102,7 +105,13 @@ function App() {
 
     {/* <Toggler/> */}
 
-    <ColorBox colors={colors}/>
+    {/* <ColorBox colors={colors}/> */}
+
+    {/* <h1>State Demo</h1>
+    <Counter/> */}
+
+    {/* <ScoreKeeper/> */}
+    <EmojiClicker/>
 
 
     </>
