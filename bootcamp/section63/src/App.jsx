@@ -15,6 +15,7 @@ import ColorBox from './components/ColorBox'
 import Counter from './components2/Counter'
 import ScoreKeeper from './components2/ScoreKeeper'
 import EmojiClicker from './components2/EmojiClicker'
+import ScoreKeeper2 from './components2/ScoreKeeper2'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -77,6 +78,12 @@ function App() {
   ];
 
 
+  const numPlayers = [9,9,9,9];
+
+
+  
+
+
   return (
     <>
     {/* <Greeter person="Bill" from="colt"/>
@@ -111,7 +118,8 @@ function App() {
     <Counter/> */}
 
     {/* <ScoreKeeper/> */}
-    <EmojiClicker/>
+    {/* <EmojiClicker/> */}
+    <ScoreKeeper2 Players={2} target={10} />
 
 
     </>

@@ -18,18 +18,30 @@ const EmojiClicker = () => {
         )
     }
 
-    const deleteEmoji = ()=>{
-        SetEmoji((AddedEmoji)=>{
-            [...AddedEmoji, AddedEmoji.remove(randomemoji())]
+    function deleteEmoji(id){
+        SetEmoji(prevEmoji =>{
+            return prevEmoji.filter(e=> e.id!==id)
         })
     }
+
+    const ChangeEvery = ()=>{
+        SetEmoji(ChangeEmo =>{
+            return ChangeEmo.map((e)=>{
+                return { ...e , emoji: '❤️'}
+            })
+        })
+    }
+
+
     
   return (
     <div>
         {Emoji.map((e)=>(
-            <span onClick={deleteEmoji} className='text-4xl' key={e.id}>{e.emoji}</span>
+            <span onClick={() => deleteEmoji(e.id)} className='text-4xl cursor-pointer' key={e.id}>{e.emoji}</span>
         ))}
-      <button onClick={addEmo}>add emo </button>
+      <button onClick={addEmo}>addEmo </button>
+      <br />    
+      <button onClick={ChangeEvery}>changeEveryEmo</button>
     </div>
   )
 }
