@@ -6,7 +6,7 @@ import ListPicker from './components/ListPicker'
 import DoubleDice from './components/DoubleDice'
 import ColorList from './components/ColorList'
 import SlotMachineExer from './components/SlotMachineExer'
-import ShoppingList from './components/ShoppingList'
+// import ShoppingList from './components/ShoppingList'
 import PropertyList from './components/PropertyList'
 import SlotMachineExer2 from './components/SlotMachineExer2'
 import ShoppingList2 from './components/ShoppingList2'
@@ -17,6 +17,14 @@ import ScoreKeeper from './components2/ScoreKeeper'
 import EmojiClicker from './components2/EmojiClicker'
 import ScoreKeeper2 from './components2/ScoreKeeper2'
 import Lucky7 from './components2/Lucky7'
+import Toggler2 from './components/Toggler2'
+import { Input } from 'postcss'
+// import Toggler from './components/toggler'
+// import InputForm from './section69/InputForm'
+import SignUp from './section69/SignUp'
+// import BetterSignUp from './section69/BetterSignUp'
+import ShoppingListForm from './section69/ShoppingListForm'
+import ShoppingList from './section69/ShoppingList'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -121,7 +129,15 @@ function App() {
     {/* <ScoreKeeper/> */}
     {/* <EmojiClicker/> */}
     {/* <ScoreKeeper2 Players={2} target={10} /> */}
-    <Lucky7 boxes={2}/>
+    {/* <Lucky7 boxes={2}/> */}
+
+    {/* <Toggler2 number={7}/> */}
+    {/* <InputForm/> */}
+    {/* <SignUp/> */}
+    {/* <BetterSignUp/> */}
+    {/* <ShoppingListForm/> */}
+    <ShoppingList/>
+    {/* <ShoppingListForm/> */}
 
 
     </>

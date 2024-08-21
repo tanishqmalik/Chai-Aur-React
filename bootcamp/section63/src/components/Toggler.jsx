@@ -21,7 +21,7 @@ const Toggler = () => {
     <div>
       <h1 onClick={emojiChange}>{!Emoji ? '😡' :'😀' }</h1>
       <h1>{Count}</h1>
-      <button onClick={increment}></button>
+      <button onClick={increment}>+1</button>
     </div>
   )
 }

@@ -12,9 +12,6 @@ const Lucky7 = ({boxes} ) => {
 
   const win = sumOfAllElem(Dice)==7;
 
-  
-
-
 
   return (
     <div className='w-full h-screen flex items-center justify-center flex-col gap-6'>
