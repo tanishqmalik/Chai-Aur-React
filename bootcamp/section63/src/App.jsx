@@ -22,9 +22,10 @@ import { Input } from 'postcss'
 // import Toggler from './components/toggler'
 // import InputForm from './section69/InputForm'
 import SignUp from './section69/SignUp'
-// import BetterSignUp from './section69/BetterSignUp'
+import BetterSignUp from './section69/BetterSignUp'
 import ShoppingListForm from './section69/ShoppingListForm'
 import ShoppingList from './section69/ShoppingList'
+import BetterSignUp2 from './section69/BetterSignUp2'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -136,8 +137,9 @@ function App() {
     {/* <SignUp/> */}
     {/* <BetterSignUp/> */}
     {/* <ShoppingListForm/> */}
-    <ShoppingList/>
+    {/* <ShoppingList/> */}
     {/* <ShoppingListForm/> */}
+    <BetterSignUp2/>
 
 
     </>
