@@ -9,7 +9,7 @@ import SlotMachineExer from './components/SlotMachineExer'
 // import ShoppingList from './components/ShoppingList'
 import PropertyList from './components/PropertyList'
 import SlotMachineExer2 from './components/SlotMachineExer2'
-import ShoppingList2 from './components/ShoppingList2'
+// import ShoppingList2 from './components/ShoppingList2'
 // import Toggler from './components/Toggler'
 import ColorBox from './components/ColorBox'
 import Counter from './components2/Counter'
@@ -26,6 +26,7 @@ import BetterSignUp from './section69/BetterSignUp'
 import ShoppingListForm from './section69/ShoppingListForm'
 import ShoppingList from './section69/ShoppingList'
 import BetterSignUp2 from './section69/BetterSignUp2'
+import ShoppingListForm2 from './section69/ShoppingListForm2'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -139,7 +140,9 @@ function App() {
     {/* <ShoppingListForm/> */}
     {/* <ShoppingList/> */}
     {/* <ShoppingListForm/> */}
-    <BetterSignUp2/>
+    {/* <BetterSignUp2/> */}
+
+    <ShoppingListForm2/>
 
 
     </>

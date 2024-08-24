@@ -28,7 +28,6 @@ const ShoppingList = () => {
         ])
 
         SetnewItem({product: '', quantity:''})
-
     }
   return (
     <div>
