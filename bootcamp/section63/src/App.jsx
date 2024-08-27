@@ -27,6 +27,7 @@ import ShoppingListForm from './section69/ShoppingListForm'
 import ShoppingList from './section69/ShoppingList'
 import BetterSignUp2 from './section69/BetterSignUp2'
 import ShoppingListForm2 from './section69/ShoppingListForm2'
+import ShoppingList2 from './section69/ShoppingList2'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -142,7 +143,8 @@ function App() {
     {/* <ShoppingListForm/> */}
     {/* <BetterSignUp2/> */}
 
-    <ShoppingListForm2/>
+    {/* <ShoppingListForm2/> */}
+    <ShoppingList2/>
 
 
     </>
